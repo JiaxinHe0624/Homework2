@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Page</title>
+</head>
+<body>
+
+    <h1 id="myHeading">Welcome!</h1>
+    <button id="myButton">Click Me</button>
+    <button id="resetButton">Change it back</button>
+
+    <script>
+        const heading = document.getElementById("myHeading");
+        const btn = document.getElementById("myButton");
+        const resetBtn = document.getElementById("resetButton");
+
+        btn.addEventListener("click", function(){
+            heading.textContent = "Have fun coding!";
+            heading.style.color = "blue";
+        });
+
+        resetBtn.addEventListener("click", function(){
+            heading.textContent = "Welcome!";
+            heading.style.color = "black";
+        });
+    </script>
+
+</body>
+</html>
